@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primaryWhite);
+    scroll-behavior: smooth;
+}
+
+/********** VARIABLES **********/
+
+:root {
+    --primaryRed: #f84a4a;
+    --primaryDarkRed: #AE0017;
+    --primaryWhite: #fff;
+    --primaryLightPurple: #A64C93;
+    --primaryDarkPurple: #6A5593;
+    --primaryLightBlue: #0092FF;
+    --primaryDarkBlue: #3B527B;
+    --primaryDarkGrey: #2F4858;
+}
+
+/* PONKSOUND LOGO */
+
+.logo a {
+    color: var(--primaryWhite);
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: var(--primaryRed);
+}
+
+/* GO BACK ICON / BUTTON */
+
+.goback-div {
+    position: relative;
+}
+
+.goBack {
+    position: relative;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fa-backspace {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 40px;
+    color: var(--primaryWhite);
+    -webkit-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.goBackp {
+    position: absolute;
+    font-size: 20px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+    top: 25px;
+    left: 80px;
+}
+
+.fa-backspace:hover {
+    color: var(--primaryRed);
+}
+
+/*********** TITLE  ************/
+
+.main-container {
+    width: 100%;
+    padding: 1%;
+    background-color: var(--primaryDarkGrey);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.90) 100%), url("img/section1-background.jpg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.title {
+    margin: 50px 0 0;
+    color: var(--primaryWhite);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.title-h1-line {
+    margin: auto;
+    width: 50%;
+    left: 0;
+    bottom: 1px;
+    height: 2.5px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 93%, 63%, .75)), to(hsla(0, 0%, 0%, 0)));
+    background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 93%, 63%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    margin-bottom: 30px;
+}
+
+.title p {
+    width: 90%;
+    color: rgba(230, 230, 230, 0.92);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: auto;
+    text-transform: initial;
+    margin-bottom: 10px;
+}
+
+.title h5 {
+    margin-bottom: 30px;
+}
+
+/*********** AUDIO CONTAINERS ***********/
+
+.small-title h4 {
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.small-title-h1-line {
+    margin: auto;
+    width: 25%;
+    left: 0;
+    bottom: 1px;
+    height: 2.5px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 93%, 63%, .75)), to(hsla(0, 0%, 0%, 0)));
+    background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 93%, 63%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    margin-bottom: 30px;
+}
+
+.audio-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.audioBoxes {
+    text-align: center;
+}
+
+.beforeafterbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.beforeafterbox p {
+    font-weight: 600;
+    text-transform: capitalize;
+    position: absolute;
+    left: -60px;
+}
+
+.button-box {
+    margin: auto;
+}
+
+.button {
+    width: 90px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid var(--primaryRed);
+    background-color: transparent;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+    margin-left: auto;
+    outline: none;
+}
+
+.button:hover {
+    background-color: var(--primaryRed);
+}
+
+.audio-container-line {
+    margin: auto;
+    width: 20%;
+    left: 0;
+    bottom: 1px;
+    height: 2.5px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 0%, 0)), color-stop(50%, rgba(255, 255, 255, .75)), to(hsla(0, 0%, 0%, 0)));
+    background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, rgba(255, 255, 255, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    margin-bottom: 30px;
+}
+
+/************** ARROW UP **************/
+
+.arrowUp {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    display: none;
+    z-index: 100;
+}
+
+.arrowShow {
+    display: block;
+}
+
+.fa-arrow-alt-circle-up {
+    font-size: 2.5rem;
+    background-color: transparent;
+    color: var(--primaryWhite);
+    opacity: 0.6;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.fa-arrow-alt-circle-up:hover {
+    color: var(--primaryRed);
+}
+
+/**************** SECTION FOOTER **************/
+
+.footer {
+    width: 100%;
+    padding: 1%;
+    background-color: black;
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.90) 100%), url("img/section1-background.jpg") center no-repeat; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.footerContent {
+    width: 92%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footerContent p span {
+    color: var(--primaryRed)
+}
+
+.footerContent p a {
+    color: var(--primaryWhite);
+    text-decoration: none;
+}
+
+.footerContent p i {
+    color: var(--primaryRed)
+}
+
+/*********** MEDIA QUERY - AUDIO CONTAINERS ***********/
+
+@media (max-width: 420px) {
+
+    .audioBoxes {
+        position: relative;
+        left: 10px;
+    }
+
+    .beforeafterbox p {
+        font-size: 0.7rem;
+        left: -37px;
+    }
+}
+
+/********** GO BACK BUTTON GOES STICKY *********/
+@media (max-width: 650px) {
+    .goback-div {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .goback-div a i {
+        font-size: 30px;
+        z-index: 100;
+    }
+
+    .goback-div p {
+        top: 7px;
+        left: 7px;
+        font-size: 12px;
+    }
+}
+
+/********** MEDIA QUERY FOOTER *********/
+
+@media (max-width: 1024px) {
+    .footerContent {
+        width: 92%;
+    }
+
+    .footerContent p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .footerContent {
+        width: 100%;
+    }
+
+    .footerContent p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .footerContent p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .footerContent p {
+        font-size: 0.45rem;
+    }
+}
