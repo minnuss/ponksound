@@ -144,7 +144,7 @@ html {
     bottom: 1px;
     height: 2.5px;
     background: #333;
-    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 93%, 63%, .75)), to(hsla(0, 0%, 0%, 0)));
+    background: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 93%, 63%, .75)), to(hsla(0, 0%, 0%, 0)));
     background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 93%, 63%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
     margin-bottom: 30px;
 }
