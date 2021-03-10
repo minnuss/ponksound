@@ -8,9 +8,7 @@
 }
 
 html {
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Archivo', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--primaryWhite);
     scroll-behavior: smooth;
 }
@@ -32,7 +30,7 @@ html {
 .header {
     width: 100%;
     position: absolute;
-    top: 15px;
+    top: 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,7 +41,7 @@ html {
 
 .header .logo a {
     color: var(--primaryWhite);
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -115,7 +113,7 @@ html {
 
 .nav-ul a {
     color: var(--primaryWhite);
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-right: 20px;
     transition: color 0.4s ease-in-out;
@@ -127,7 +125,7 @@ html {
 }
 
 .nav-ul a:nth-child(7) {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .nav-ul a:hover {
@@ -160,7 +158,7 @@ html {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -1px;
     height: 2.5px;
     background: #333;
     background: linear-gradient(to left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 93%, 63%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
@@ -1151,7 +1149,7 @@ textarea {
 @media(max-width: 520px) {
 
     .hamb-btn {
-        top: 20px;
+        top: 24px;
     }
 
     /* HAMBURGER MENU LINKS */

@@ -8,8 +8,7 @@
 }
 
 html {
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--primaryWhite);
     scroll-behavior: smooth;
 }
