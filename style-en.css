@@ -991,6 +991,10 @@ textarea {
 
 @media(max-width: 780px) {
 
+    .header {
+        margin-top: -5px;
+    }
+
     /* language link switch desktop */
     .language {
         display: none;
@@ -1000,7 +1004,7 @@ textarea {
     .language-mob {
         display: block;
         position: absolute;
-        top: 1.2vh;
+        top: 1.3vh;
         left: 3vw;
         margin: 0;
     }
@@ -1196,7 +1200,7 @@ textarea {
 @media(max-width: 520px) {
 
     .hamb-btn {
-        top: 24px;
+        top: 19px;
     }
 
     /* HAMBURGER MENU LINKS */
