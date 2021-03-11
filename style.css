@@ -113,6 +113,39 @@ html {
 
 }
 
+.nav-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* language link switch mobile */
+.language-mob {
+    display: none;
+}
+
+/* language link switch desktop*/
+.language {
+    text-align: center;
+    display: flex;
+}
+
+.lang-link {
+    margin: 0 40px 0 20px;
+    color: var(--primaryWhite);
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.lang-link:hover {
+    color: var(--primaryRed);
+}
+
+/* -------------------- */
+
 .nav-ul a {
     color: var(--primaryWhite);
     font-size: 1.25rem;
@@ -124,10 +157,6 @@ html {
 
 .nav-ul a:first-child {
     color: var(--primaryRed);
-}
-
-.nav-ul a:nth-child(7) {
-    font-size: 0.9rem;
 }
 
 .nav-ul a:hover {
@@ -964,6 +993,25 @@ textarea {
 /************ MEDIA FOR HERO CONTAINER ************/
 
 @media(max-width: 780px) {
+
+    /* language link switch desktop */
+    .language {
+        display: none;
+    }
+
+    /* language link switch mobile */
+    .language-mob {
+        display: block;
+        position: absolute;
+        top: 1vh;
+        left: 3vw;
+        margin: 0;
+    }
+
+    .lang_link_mob {
+        color: var(--primaryWhite);
+        font-size: 0.8rem;
+    }
 
     /********** HAMBURGER MENU  ***********/
 
